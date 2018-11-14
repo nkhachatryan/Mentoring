@@ -5,6 +5,7 @@ Solution:*/
 
 std::vector<int> countPositivesSumNegatives(std::vector<int> myVector)
 {
+if(myVector.empty()) return myVector;
 int count=0;
 int sum=0;
     for(int i=0;i<myVector.size();i++){
@@ -19,14 +20,3 @@ int sum=0;
     arr[1]=sum;} 
     return arr;
 }
-/* Fail at Attemp
-Time: 1709ms Passed: 3 Failed: 1 Exit Code: 1
-Test Results:
- Test
- Test1
- Test2
- Test3
-Expected: equal to [  ]
-Actual: [ 0, 0 ]
- RandomTests
- */
